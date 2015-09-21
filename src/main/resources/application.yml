@@ -1,0 +1,8 @@
+endpoints:
+  beans:
+    id: springbeans
+    sensitive: false
+  env:
+    enabled: false
+  shutdown:
+    enabled: true
