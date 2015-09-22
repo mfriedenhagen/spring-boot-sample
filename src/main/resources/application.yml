@@ -1,8 +1,32 @@
+spring:
+  main:
+    show_banner: false
 endpoints:
+  autoconfig:
+    id: _autoconfig
+    sensitive: true
   beans:
-    id: springbeans
-    sensitive: false
+    id: _springbeans
+    sensitive: true
+  configprops:
+    id: _configprops
+    sensitive: true
+  dump:
+    id: _dump
+    enabled: true
   env:
     enabled: false
+  health:
+    id: _health
+    enabled: true
+  info:
+    id: _info
+    enabled: true
+  metrics:
+    id: _metrics
+    enabled: true
   shutdown:
+    enabled: false
+  trace:
+    id: _trace
     enabled: true
